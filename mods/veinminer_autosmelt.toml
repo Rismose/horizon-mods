@@ -1,0 +1,35 @@
+# Draft entry for horizon-rust/horizon-mods: save as mods/veinminer_autosmelt.toml in your fork.
+# The sha256 matches target/horizon-mod/veinminer_autosmelt-3.0.0.hmod; set published to the day it is merged.
+id = "veinminer_autosmelt"
+kind = "native-mod"
+name = "Veinminer & Autosmelt"
+summary = "Mine a whole ore vein at once with the Veinmine enchantment, and smelt raw iron, gold and copper as you mine with Smelting."
+description = """
+A Horizon port of the **Veinmine & Autosmelt Enchantments** datapack.
+
+**Veinmine** (`veinminer_autosmelt:veinminer`): break one ore with a pickaxe and the whole connected vein goes with it, diagonals included. Regular and deepslate ores count as one vein, and iron, copper and gold continue into their raw blocks. Fortune, Silk Touch and tool wear work as in vanilla, and the drops are gathered at the ore you mined.
+
+**Smelting** (`veinminer_autosmelt:smelting`): raw iron, gold and copper (and their raw blocks) drop as ingots and blocks, with a hiss and a puff of smoke. It combines with Veinmine and Fortune.
+
+- Both enchantments go on pickaxes and can be found at the enchanting table, from librarians, and as books on the creative Ingredients tab.
+- Settings are in `config/veinminer_autosmelt-common.toml`: hunger while veinmining, cooldown, a vein size cap, whether the enchantment is required, and a toggle for each pickaxe tier.
+
+Native mod: the launcher compiles it for your game build. Source: https://github.com/rismose/veinminer-horizon
+"""
+authors = ["Rismose"]
+owners = ["rismose"]
+owner_ids = [47760012]
+license = "MIT"
+source = "https://github.com/rismose/veinminer-horizon"
+icon = "icons/veinminer_autosmelt.png"
+categories = ["game-mechanics", "utility"]
+tags = ["veinminer", "ores", "enchantment", "autosmelt", "qol"]
+
+[[versions]]
+version = "3.0.0"
+published = "2026-11-19"
+game = "26.3"
+file = "veinminer_autosmelt-3.0.0.hmod"
+sha256 = "5cd3a1076d0b4a96ce9a79fe80e642a9b341c1c48b28bb863740f2a232a39a44"
+changelog = """
+Port of the datapack to a Horizon native mod, built for Nightly 2026-11-18 (6d765e0)."""
